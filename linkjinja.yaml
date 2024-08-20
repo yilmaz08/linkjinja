@@ -1,0 +1,30 @@
+# Content
+title: Your Title or Name
+bio: "a short bio here"
+logo: "your image"
+tabs:
+  - class: website
+    title: Website
+    links:
+      - title: About
+        url: https://example.com
+  - class: social
+    title: Social
+    links:
+      - title: GitHub
+        url: https://github.com/
+  - class: contact
+    title: Contact
+    links:
+      - title: Email
+        url: "mailto:randomemail"
+
+
+settings:
+  background_color: "#0D1117"         # background color of the page
+  text_color: "#C9D1D9"               # text color of the page
+  link_color: "#1E1E22"               # color of the links
+  logo_size: 300px                    # size of the logo
+  logo_radius: 50%                    # border radius of the logo
+  font_family: "Arial, sans-serif"    # font family of the page
+  include_footer: true                # if true, a footer with the link to the source code will be included in the page (please leave it as true)

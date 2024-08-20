@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        * {
+            color: {{ settings.text_color }};
+            box-sizing: border-box;
+            font-family: {{ settings.font_family }};
+            margin: 0;
+        }
+        body {
+            background-color: {{ settings.background_color }};
+        }
+        main {
+            height: 100vh;
+            max-width: 500px;
+            width: 85%;
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        header {
+            text-align: center;
+            top: 0;
+            width: 100%;
+            padding: 20px 20px 0 20px;
+        }
+        nav {
+            overflow: scroll;
+            scrollbar-width: none;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+        footer {
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+            background-color: {{ settings.background_color }};
+            text-align: center;
+            padding: 10px;
+        }
+        #logo {
+            width: {{ settings.logo_size }};
+            height: {{ settings.logo_size }};
+            border-radius: {{ settings.logo_radius }};
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li > a {
+            text-decoration: none;
+        }
+        a > span {
+            width: 100%;
+            display: block;
+            background-color: {{ settings.link_color }};
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .non-selectable {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <img class="non-selectable" src="{{ logo }}" alt="logo" id="logo">
+            <h1>{{ title }}</h1>
+            <p>{{ bio }}</p>
+        </header>
+
+        <nav>
+            {% for tab in tabs %}
+                <h2 class="non-selectable">{{ tab.title }}</h2>
+                <div class="{{ tab.class }}">
+                    <ul>
+                        {% for link in tab.links %}
+                            <li>
+                                <a href="{{ link.url }}">
+                                    <span>{{ link.title }}</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </nav>
+
+        <footer>
+            <p>Powered by <a href="https://github.com/yilmaz08/linkjinja">LinkJinja</a></p>
+        </footer>
+    </main>
+
+    <script></script>
+</body>
+</html>
