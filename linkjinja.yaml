@@ -1,5 +1,5 @@
 # Content
-title: Your Title or Name
+name: Your Name
 bio: "a short bio here"
 logo: "your image"
 tabs:
@@ -17,7 +17,7 @@ tabs:
     title: Contact
     links:
       - title: Email
-        url: "mailto:randomemail"
+        url: "mailto:example@example.com"
 
 
 settings:
@@ -27,4 +27,4 @@ settings:
   logo_size: 300px                    # size of the logo
   logo_radius: 50%                    # border radius of the logo
   font_family: "Arial, sans-serif"    # font family of the page
-  include_footer: true                # if true, a footer with the link to the source code will be included in the page (please leave it as true)
+  include_footer: true                # if true, a footer with the link to the source code will be included in the page
