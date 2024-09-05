@@ -1,7 +1,10 @@
 # Content
 name: Your Name
 bio: "a short bio here"
-logo: "your image"
+logo:
+  src: "/path/to/my/photo"
+  alt: "my photo"
+icon: "/path/to/my/icon"
 tabs:
   - class: website
     title: Website
@@ -22,9 +25,9 @@ tabs:
 
 settings:
   background_color: "#0D1117"         # background color of the page
-  text_color: "#C9D1D9"               # text color of the page
+  text_color: "#C9D1D9"               # color of the text
   link_color: "#1E1E22"               # color of the links
+  title_color: "#C9D1D9"              # color of the titles
   logo_size: 300px                    # size of the logo
   logo_radius: 50%                    # border radius of the logo
   font_family: "Arial, sans-serif"    # font family of the page
-  include_footer: true                # if true, a footer with the link to the source code will be included in the page
