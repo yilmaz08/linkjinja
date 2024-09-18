@@ -65,7 +65,11 @@
             padding: 10px;
             margin-bottom: 5px;
             border-radius: 5px;
+			transition: background 0.25s ease;
         }
+		a > p:hover {
+			background-color: {{ settings.link_hover_color }};
+		}
         h1, h2 {
             text-align: center;
             margin-bottom: 10px;
