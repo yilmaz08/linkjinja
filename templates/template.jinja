@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="{{ bio }}">
-    <meta name="author" content="{{ name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="{{ name }}">
+    <meta name="description" content="{{ bio }}">
+	<meta name="keywords" content="{{ keywords }}">
+    
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="{{ name }}">
+	<meta property="og:description" content="{{ bio }}">
+	<meta property="og:url" content="{{ url }}">
+	<meta property="og:image" content="{{ logo.src }}">
+
 	<link rel="icon" type="image/x-icon" href="{{ icon }}">
     <title>{{ name }}</title>
     <style>

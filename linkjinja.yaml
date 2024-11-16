@@ -1,6 +1,8 @@
 # Content
 name: Your Name
 bio: "a short bio here"
+keywords: "example, keywords, here"
+url: https://example.com
 logo:
   src: "/path/to/my/photo"
   alt: "my photo"
